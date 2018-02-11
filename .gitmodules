@@ -1,0 +1,4 @@
+[submodule "lib/Adafruit-GFX-Library"]
+	path = lib/Adafruit-GFX-Library
+	url = https://github.com/JojoS62/Adafruit-GFX-Library
+	branch = mbed-compatible

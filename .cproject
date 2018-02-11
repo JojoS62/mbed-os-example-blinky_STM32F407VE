@@ -14,41 +14,44 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="${cross_rm} -rf" description="" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.405838054" name="Debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.405838054" name="Debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.405838054." name="/" resourcePath="">
-						<toolChain id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.428438465" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.866421727" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.architecture.507914439" name="Architecture" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.architecture" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.arch.none" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.181000933" name="Instruction set" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.548326146" name="Float ABI" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.softfp" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.846726831" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.382818124" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.527173803" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.244428529" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" value="true" valueType="boolean"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.066965703" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" value="true" valueType="boolean"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.nobuiltin.609179718" name="Disable builtin (-fno-builtin)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.nobuiltin" value="true" valueType="boolean"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.other.578587866" name="Other optimization flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.other" value="-funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.218811147" name="Enable all common warnings (-Wall)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" value="true" valueType="boolean"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.342453226" name="Enable extra warnings (-Wextra)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn" value="true" valueType="boolean"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.other.437506437" name="Other warning flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.other" value="-Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.771432057" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.810997795" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="GNU Tools for ARM Embedded Processors" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.252676062" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.112144683" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.472277812" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.479153159" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.922038329" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.266204630" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.684988346" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.179791846" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.463170972" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.457559701" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" value="true" valueType="boolean"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.962482427" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+						<toolChain errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug.428438465" name="Cross ARM GCC" superClass="ilg.gnuarmeclipse.managedbuild.cross.toolchain.elf.debug">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family.866421727" name="ARM family" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.family" useByScannerDiscovery="false" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-m4" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.architecture.507914439" name="Architecture" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.architecture" useByScannerDiscovery="false" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.arch.none" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.181000933" name="Instruction set" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset" useByScannerDiscovery="false" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.548326146" name="Float ABI" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.softfp" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.846726831" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.382818124" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.none" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.527173803" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.244428529" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.066965703" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.nobuiltin.609179718" name="Disable builtin (-fno-builtin)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.nobuiltin" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.other.578587866" name="Other optimization flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.other" useByScannerDiscovery="true" value="-funsigned-char -fno-delete-null-pointer-checks -fomit-frame-pointer" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.218811147" name="Enable all common warnings (-Wall)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.342453226" name="Enable extra warnings (-Wextra)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.other.437506437" name="Other warning flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.other" useByScannerDiscovery="true" value="-Wno-unused-parameter -Wno-missing-field-initializers" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.771432057" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.max" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.810997795" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" useByScannerDiscovery="false" value="GNU Tools for ARM Embedded Processors" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.252676062" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" useByScannerDiscovery="false" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.112144683" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" useByScannerDiscovery="false" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.472277812" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" useByScannerDiscovery="false" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.479153159" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" useByScannerDiscovery="false" value="ar" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.922038329" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" useByScannerDiscovery="false" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.266204630" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" useByScannerDiscovery="false" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.684988346" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" useByScannerDiscovery="false" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.179791846" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" useByScannerDiscovery="false" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.463170972" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" useByScannerDiscovery="false" value="rm" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.457559701" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.962482427" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createlisting.1042697663" name="Create extended listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createlisting" useByScannerDiscovery="false"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar.1148814388" name="'char' is signed (-fsigned-char)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.signedchar" useByScannerDiscovery="true" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.1177665339" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format" useByScannerDiscovery="true"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.859451698" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
-							<builder buildPath="${workspace_loc:/mbed-os-example-blinky}/BUILD/Debug" cleanBuildTarget="mbedclean" id="ilg.gnuarmeclipse.managedbuild.cross.builder.871584516" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder"/>
-							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.860447099" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.572429602" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.767525289" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
+							<builder buildPath="${workspace_loc:/mbed-os-example-blinky}/BUILD/Debug" cleanBuildTarget="mbedclean" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="ilg.gnuarmeclipse.managedbuild.cross.builder.871584516" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="3" superClass="ilg.gnuarmeclipse.managedbuild.cross.builder"/>
+							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GCCErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.860447099" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.572429602" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.767525289" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" useByScannerDiscovery="true" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/.&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/img&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os&quot;"/>
@@ -131,17 +134,14 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.files.673094249" name="Include files (-include)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.files" useByScannerDiscovery="true" valueType="includeFiles">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed_config.h&quot;"/>
 								</option>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.other.034039450" name="Other assembler flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.other" value="-DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1" valueType="string"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.other.034039450" name="Other assembler flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.other" useByScannerDiscovery="false" value="-DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1" valueType="string"/>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.076651358" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
 							</tool>
-							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.597710649" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
+							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GCCErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.597710649" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.710520115" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/.&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/img&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export/MBED_A1_mcuxpresso_LPC11U37H_401&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis/TARGET_CORTEX_M&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/drivers&quot;"/>
@@ -154,32 +154,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/fat/ChaN&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs/littlefs&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/importer&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/nanostack&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/generic_modem_driver&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/utils&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/storage&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal/storage_abstraction&quot;"/>
@@ -207,6 +181,9 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit_TFTLCD_16bit_STM32-master/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Chart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/util&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.664668603" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__MBED__=1"/>
@@ -242,7 +219,7 @@
 									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
 									<listOptionValue builtIn="false" value="TARGET_STM"/>
 									<listOptionValue builtIn="false" value="TARGET_STM32F407"/>
-									<listOptionValue builtIn="false" value="TARGET_STM32F407VG"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F407VE"/>
 									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
 									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
 									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
@@ -257,18 +234,15 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.files.827215259" name="Include files (-include)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.files" useByScannerDiscovery="true" valueType="includeFiles">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed_config.h&quot;"/>
 								</option>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.974300537" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.gnu99" valueType="enumerated"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.974300537" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.c11" valueType="enumerated"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other.177780676" name="Other compiler flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other" useByScannerDiscovery="true" value="-DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1" valueType="string"/>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.586380290" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
 							</tool>
-							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.419289735" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler">
+							<tool command="${cross_prefix}${cross_cpp}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} -c ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GCCErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.419289735" name="Cross ARM C++ Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths.262417195" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/.&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/img&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export/MBED_A1_mcuxpresso_LPC11U37H_401&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis/TARGET_CORTEX_M&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/drivers&quot;"/>
@@ -281,32 +255,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/fat/ChaN&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs/littlefs&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/importer&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/nanostack&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/generic_modem_driver&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/utils&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/storage&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal/storage_abstraction&quot;"/>
@@ -332,6 +280,12 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_GCC_ARM&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/TARGET_STM32F407_BLACK&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit_TFTLCD_16bit_STM32-master/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Chart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/OneButton&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/util&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.453879805" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__MBED__=1"/>
@@ -367,7 +321,7 @@
 									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
 									<listOptionValue builtIn="false" value="TARGET_STM"/>
 									<listOptionValue builtIn="false" value="TARGET_STM32F407"/>
-									<listOptionValue builtIn="false" value="TARGET_STM32F407VG"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F407VE"/>
 									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
 									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
 									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
@@ -382,19 +336,19 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.files.958206912" name="Include files (-include)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.include.files" useByScannerDiscovery="true" valueType="includeFiles">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed_config.h&quot;"/>
 								</option>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.std.513562632" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.std.gnucpp98" valueType="enumerated"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.std.513562632" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.std.cpp11" valueType="enumerated"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.noexceptions.108958446" name="Do not use exceptions (-fno-exceptions)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.noexceptions" useByScannerDiscovery="true" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nortti.136274638" name="Do not use RTTI (-fno-rtti)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.nortti" useByScannerDiscovery="true" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.otherwarnings.065556904" name="Other warning flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.otherwarnings" useByScannerDiscovery="true" value="-Wvla" valueType="string"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.other.386034158" name="Other compiler flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.other" useByScannerDiscovery="true" value="-DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1" valueType="string"/>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input.532096326" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.compiler.input"/>
 							</tool>
-							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.986078735" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.911922289" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
+							<tool command="${cross_prefix}${cross_cpp}${cross_suffix}" commandLinePattern="${COMMAND} ${cross_toolchain_flags} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.986078735" name="Cross ARM C++ Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.911922289" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Debug\linker-script-debug.ld&quot;"/>
 								</option>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.042590352" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths"/>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs.470924237" name="Libraries (-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs" valueType="libs">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.042590352" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" useByScannerDiscovery="false"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs.470924237" name="Libraries (-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.libs" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="stdc++"/>
 									<listOptionValue builtIn="false" value="supc++"/>
 									<listOptionValue builtIn="false" value="m"/>
@@ -402,9 +356,9 @@
 									<listOptionValue builtIn="false" value="gcc"/>
 									<listOptionValue builtIn="false" value="nosys"/>
 								</option>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs.792806825" name="Other objects" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs"/>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.831012294" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.flags.817466070" name="Linker flags (-Xlinker [option])" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.flags" valueType="stringList">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs.792806825" name="Other objects" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.otherobjs" useByScannerDiscovery="false"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.831012294" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.flags.817466070" name="Linker flags (-Xlinker [option])" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.flags" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="--wrap=main"/>
 									<listOptionValue builtIn="false" value="--wrap=_malloc_r"/>
 									<listOptionValue builtIn="false" value="--wrap=_free_r"/>
@@ -414,15 +368,15 @@
 									<listOptionValue builtIn="false" value="--wrap=exit"/>
 									<listOptionValue builtIn="false" value="--wrap=atexit"/>
 								</option>
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other.231533104" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other" value="-DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1 -Wl,-n -Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group" valueType="string"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other.231533104" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.other" useByScannerDiscovery="false" value="-DMBED_DEBUG -DMBED_TRAP_ERRORS_ENABLED=1 -Wl,-n -Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group" valueType="string"/>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input.944908868" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
 							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver.050543051" name="Cross ARM GNU Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.archiver"/>
-							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.481741354" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash">
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.189625561" name="Output file format (-O)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice" value="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.binary" valueType="enumerated"/>
+							<tool command="${cross_prefix}${cross_objcopy}${cross_suffix}" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash.481741354" name="Cross ARM GNU Create Flash Image" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createflash">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.189625561" name="Output file format (-O)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice" useByScannerDiscovery="false" value="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.binary" valueType="enumerated"/>
 							</tool>
 							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting.740580047" name="Cross ARM GNU Create Listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.createlisting">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.955843809" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
@@ -431,18 +385,21 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.304165264" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.502701069" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
 							</tool>
-							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.501886421" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
-								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.175284022" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+							<tool command="${cross_prefix}${cross_size}${cross_suffix}" commandLinePattern="${COMMAND} ${FLAGS}" errorParsers="" id="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize.501886421" name="Cross ARM GNU Print Size" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.printsize">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.175284022" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format" useByScannerDiscovery="false"/>
 							</tool>
-							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.1662916832" name="GNU ARM Cross C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker"/>
+							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.1662916832" name="GNU ARM Cross C Linker" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.735206672" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+							</tool>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="mbed-os/features/storage|mbed-os/features/filesystem|mbed-os/tools|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_MICRO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_CORTEX_A|mbed-os/features/FEATURE_COMMON_PAL|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xC|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_ARM|mbed-os/targets/TARGET_ARM_SSG|mbed-os/features/filesystem/littlefs/littlefs/tests|mbed-os/features/TESTS|mbed-os/targets/TARGET_STM/TARGET_STM32L1|mbed-os/targets/TARGET_STM/TARGET_STM32L0|mbed-os/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_RENESAS|mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_IAR|mbed-os/features/frameworks/utest/TESTS|BUILD|mbed-os/targets/TARGET_NUVOTON|mbed-os/targets/TARGET_TOSHIBA|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_NORDIC|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0P|mbed-os/targets/TARGET_Analog_Devices|mbed-os/features/filesystem/littlefs/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F429xI|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M3|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTB_MTS_DRAGONFLY|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F410xB|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_DRAGONFLY_F411RE|mbed-os/features/unsupported|mbed-os/targets/TARGET_Realtek|mbed-os/targets/TARGET_WIZNET|.settings|mbed-os/hal/TARGET_FLASH_CMSIS_ALGO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_IAR|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F411xE|.git|mbed-os/features/mbedtls/importer/TARGET_IGNORE|mbed-os/features/mbedtls/targets/TARGET_Silicon_Labs|mbed-os/features/filesystem/littlefs/littlefs/emubd|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xG|mbed-os/.github|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M33|mbed-os/targets/TARGET_NXP|mbed-os/features/FEATURE_UVISOR|mbed-os/features/FEATURE_BLE|mbed-os/TESTS|.objs|mbed-os/.git|mbed-os/features/nanostack/FEATURE_THREAD_ROUTER|mbed-os/features/nanostack/FEATURE_NANOSTACK|mbed-os/targets/TARGET_Freescale|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F7|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M23|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_IAR|mbed-os/targets/TARGET_Silicon_Labs|mbed-os/features/netsocket/cellular/generic_modem_driver/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/TARGET_CORTEX_A|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_STD|mbed-os/cmsis/TARGET_CORTEX_A|mbed-os/targets/TARGET_Maxim|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F405RG|mbed-os/events/equeue/tests|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F411RE|mbed-os/targets/TARGET_STM/TARGET_STM32F7|mbed-os/targets/TARGET_ONSEMI|mbed-os/targets/TARGET_STM/TARGET_STM32F3|mbed-os/targets/TARGET_STM/TARGET_STM32F2|mbed-os/targets/TARGET_STM/TARGET_STM32F1|mbed-os/targets/TARGET_STM/TARGET_STM32F0|mbed-os/features/FEATURE_LWIP|mbed-os/targets/TARGET_ublox|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F412xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F469xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH|mbed-os/targets/TARGET_Atmel|mbed-os/features/mbedtls/targets/TARGET_NUVOTON|mbed-os/features/storage/FEATURE_STORAGE|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+						<entry excluding="lib/Adafruit_TFTLCD_16bit_STM32-master/examples|lib/Adafruit-GFX-Library/fontconvert|mbed-os/features/storage|mbed-os/features/filesystem|mbed-os/tools|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_MICRO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_CORTEX_A|mbed-os/features/FEATURE_COMMON_PAL|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xC|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_ARM|mbed-os/targets/TARGET_ARM_SSG|mbed-os/features/filesystem/littlefs/littlefs/tests|mbed-os/features/TESTS|mbed-os/targets/TARGET_STM/TARGET_STM32L1|mbed-os/targets/TARGET_STM/TARGET_STM32L0|mbed-os/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_RENESAS|mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_IAR|mbed-os/features/frameworks/utest/TESTS|BUILD|mbed-os/targets/TARGET_NUVOTON|mbed-os/targets/TARGET_TOSHIBA|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_NORDIC|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0P|mbed-os/targets/TARGET_Analog_Devices|mbed-os/features/filesystem/littlefs/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F429xI|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M3|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTB_MTS_DRAGONFLY|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F410xB|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_DRAGONFLY_F411RE|mbed-os/features/unsupported|mbed-os/targets/TARGET_Realtek|mbed-os/targets/TARGET_WIZNET|.settings|mbed-os/hal/TARGET_FLASH_CMSIS_ALGO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_IAR|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F411xE|.git|mbed-os/features/mbedtls/importer/TARGET_IGNORE|mbed-os/features/mbedtls/targets/TARGET_Silicon_Labs|mbed-os/features/filesystem/littlefs/littlefs/emubd|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xG|mbed-os/.github|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M33|mbed-os/targets/TARGET_NXP|mbed-os/features/FEATURE_UVISOR|mbed-os/features/FEATURE_BLE|mbed-os/TESTS|.objs|mbed-os/.git|mbed-os/features/nanostack/FEATURE_THREAD_ROUTER|mbed-os/features/nanostack/FEATURE_NANOSTACK|mbed-os/targets/TARGET_Freescale|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F7|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M23|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_IAR|mbed-os/targets/TARGET_Silicon_Labs|mbed-os/features/netsocket/cellular/generic_modem_driver/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/TARGET_CORTEX_A|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_STD|mbed-os/cmsis/TARGET_CORTEX_A|mbed-os/targets/TARGET_Maxim|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F405RG|mbed-os/events/equeue/tests|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F411RE|mbed-os/targets/TARGET_STM/TARGET_STM32F7|mbed-os/targets/TARGET_ONSEMI|mbed-os/targets/TARGET_STM/TARGET_STM32F3|mbed-os/targets/TARGET_STM/TARGET_STM32F2|mbed-os/targets/TARGET_STM/TARGET_STM32F1|mbed-os/targets/TARGET_STM/TARGET_STM32F0|mbed-os/features/FEATURE_LWIP|mbed-os/targets/TARGET_ublox|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F412xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F469xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH|mbed-os/targets/TARGET_Atmel|mbed-os/features/mbedtls/targets/TARGET_NUVOTON|mbed-os/features/storage/FEATURE_STORAGE|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="ilg.gnumcueclipse.managedbuild.packs"/>
 		</cconfiguration>
 		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.749829604">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.749829604" moduleId="org.eclipse.cdt.core.settings" name="Release">
@@ -465,7 +422,7 @@
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.464772067" name="Instruction set" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.thumb" valueType="enumerated"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.372137706" name="Float ABI" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.abi.softfp" valueType="enumerated"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.910470028" name="FPU Type" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
-							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.203498975" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.size" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.203498975" name="Optimization Level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.most" valueType="enumerated"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength.551346086" name="Message length (-fmessage-length=0)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.messagelength" value="true" valueType="boolean"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections.772303555" name="Function sections (-ffunction-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.functionsections" value="true" valueType="boolean"/>
 							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections.926481071" name="Data sections (-fdata-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.datasections" value="true" valueType="boolean"/>
@@ -582,9 +539,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/.&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/img&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export/MBED_A1_mcuxpresso_LPC11U37H_401&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis/TARGET_CORTEX_M&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/drivers&quot;"/>
@@ -597,32 +551,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/fat/ChaN&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs/littlefs&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/importer&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/nanostack&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/generic_modem_driver&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/utils&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/storage&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal/storage_abstraction&quot;"/>
@@ -648,6 +576,11 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_GCC_ARM&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/TARGET_STM32F407_BLACK&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit_TFTLCD_16bit_STM32-master/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Chart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/util&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.354623470" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__MBED__=1"/>
@@ -683,7 +616,7 @@
 									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
 									<listOptionValue builtIn="false" value="TARGET_STM"/>
 									<listOptionValue builtIn="false" value="TARGET_STM32F407"/>
-									<listOptionValue builtIn="false" value="TARGET_STM32F407VG"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F407VE"/>
 									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
 									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
 									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
@@ -707,9 +640,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/.&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/img&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export/MBED_A1_mcuxpresso_LPC11U37H_401&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis/TARGET_CORTEX_M&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/drivers&quot;"/>
@@ -722,32 +652,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/fat/ChaN&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs/littlefs&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/importer&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/nanostack&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/generic_modem_driver&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/utils&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/storage&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal/storage_abstraction&quot;"/>
@@ -773,6 +677,12 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_GCC_ARM&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/TARGET_STM32F407_BLACK&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit_TFTLCD_16bit_STM32-master/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Chart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/OneButton&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/util&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.704239652" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__MBED__=1"/>
@@ -808,7 +718,7 @@
 									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
 									<listOptionValue builtIn="false" value="TARGET_STM"/>
 									<listOptionValue builtIn="false" value="TARGET_STM32F407"/>
-									<listOptionValue builtIn="false" value="TARGET_STM32F407VG"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F407VE"/>
 									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
 									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
 									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
@@ -879,7 +789,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="mbed-os/features/storage|mbed-os/features/filesystem|mbed-os/tools|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_MICRO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_CORTEX_A|Release|mbed-os/features/FEATURE_COMMON_PAL|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xC|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_ARM|mbed-os/targets/TARGET_ARM_SSG|mbed-os/features/filesystem/littlefs/littlefs/tests|mbed-os/features/TESTS|mbed-os/targets/TARGET_STM/TARGET_STM32L1|mbed-os/targets/TARGET_STM/TARGET_STM32L0|mbed-os/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_RENESAS|mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_IAR|mbed-os/features/frameworks/utest/TESTS|BUILD|Debug|mbed-os/targets/TARGET_NUVOTON|mbed-os/targets/TARGET_TOSHIBA|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_NORDIC|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0P|mbed-os/targets/TARGET_Analog_Devices|mbed-os/features/filesystem/littlefs/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F429xI|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M3|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTB_MTS_DRAGONFLY|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F410xB|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_DRAGONFLY_F411RE|mbed-os/features/unsupported|mbed-os/targets/TARGET_Realtek|mbed-os/targets/TARGET_WIZNET|.settings|mbed-os/hal/TARGET_FLASH_CMSIS_ALGO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_IAR|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F411xE|.git|mbed-os/features/mbedtls/importer/TARGET_IGNORE|mbed-os/features/mbedtls/targets/TARGET_Silicon_Labs|mbed-os/features/filesystem/littlefs/littlefs/emubd|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xG|mbed-os/.github|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M33|mbed-os/targets/TARGET_NXP|mbed-os/features/FEATURE_UVISOR|mbed-os/features/FEATURE_BLE|mbed-os/TESTS|.objs|mbed-os/.git|mbed-os/features/nanostack/FEATURE_THREAD_ROUTER|mbed-os/features/nanostack/FEATURE_NANOSTACK|mbed-os/targets/TARGET_Freescale|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F7|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M23|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_IAR|mbed-os/targets/TARGET_Silicon_Labs|mbed-os/features/netsocket/cellular/generic_modem_driver/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/TARGET_CORTEX_A|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_STD|mbed-os/cmsis/TARGET_CORTEX_A|mbed-os/targets/TARGET_Maxim|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F405RG|mbed-os/events/equeue/tests|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F411RE|mbed-os/targets/TARGET_STM/TARGET_STM32F7|mbed-os/targets/TARGET_ONSEMI|mbed-os/targets/TARGET_STM/TARGET_STM32F3|mbed-os/targets/TARGET_STM/TARGET_STM32F2|mbed-os/targets/TARGET_STM/TARGET_STM32F1|mbed-os/targets/TARGET_STM/TARGET_STM32F0|mbed-os/features/FEATURE_LWIP|mbed-os/targets/TARGET_ublox|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F412xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F469xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH|mbed-os/targets/TARGET_Atmel|mbed-os/features/mbedtls/targets/TARGET_NUVOTON|mbed-os/features/storage/FEATURE_STORAGE|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="lib/Adafruit_TFTLCD_16bit_STM32-master/examples|lib/Adafruit-GFX-Library/fontconvert|mbed-os/features/storage|mbed-os/features/filesystem|mbed-os/tools|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_MICRO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_CORTEX_A|Release|mbed-os/features/FEATURE_COMMON_PAL|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xC|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_ARM|mbed-os/targets/TARGET_ARM_SSG|mbed-os/features/filesystem/littlefs/littlefs/tests|mbed-os/features/TESTS|mbed-os/targets/TARGET_STM/TARGET_STM32L1|mbed-os/targets/TARGET_STM/TARGET_STM32L0|mbed-os/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_RENESAS|mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_IAR|mbed-os/features/frameworks/utest/TESTS|BUILD|Debug|mbed-os/targets/TARGET_NUVOTON|mbed-os/targets/TARGET_TOSHIBA|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_NORDIC|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0P|mbed-os/targets/TARGET_Analog_Devices|mbed-os/features/filesystem/littlefs/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F429xI|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M3|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTB_MTS_DRAGONFLY|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F410xB|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_DRAGONFLY_F411RE|mbed-os/features/unsupported|mbed-os/targets/TARGET_Realtek|mbed-os/targets/TARGET_WIZNET|.settings|mbed-os/hal/TARGET_FLASH_CMSIS_ALGO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_IAR|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F411xE|.git|mbed-os/features/mbedtls/importer/TARGET_IGNORE|mbed-os/features/mbedtls/targets/TARGET_Silicon_Labs|mbed-os/features/filesystem/littlefs/littlefs/emubd|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xG|mbed-os/.github|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M33|mbed-os/targets/TARGET_NXP|mbed-os/features/FEATURE_UVISOR|mbed-os/features/FEATURE_BLE|mbed-os/TESTS|.objs|mbed-os/.git|mbed-os/features/nanostack/FEATURE_THREAD_ROUTER|mbed-os/features/nanostack/FEATURE_NANOSTACK|mbed-os/targets/TARGET_Freescale|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F7|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M23|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_IAR|mbed-os/targets/TARGET_Silicon_Labs|mbed-os/features/netsocket/cellular/generic_modem_driver/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/TARGET_CORTEX_A|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_STD|mbed-os/cmsis/TARGET_CORTEX_A|mbed-os/targets/TARGET_Maxim|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F405RG|mbed-os/events/equeue/tests|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F411RE|mbed-os/targets/TARGET_STM/TARGET_STM32F7|mbed-os/targets/TARGET_ONSEMI|mbed-os/targets/TARGET_STM/TARGET_STM32F3|mbed-os/targets/TARGET_STM/TARGET_STM32F2|mbed-os/targets/TARGET_STM/TARGET_STM32F1|mbed-os/targets/TARGET_STM/TARGET_STM32F0|mbed-os/features/FEATURE_LWIP|mbed-os/targets/TARGET_ublox|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F412xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F469xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH|mbed-os/targets/TARGET_Atmel|mbed-os/features/mbedtls/targets/TARGET_NUVOTON|mbed-os/features/storage/FEATURE_STORAGE|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -1022,9 +932,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/.&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/img&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export/MBED_A1_mcuxpresso_LPC11U37H_401&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis/TARGET_CORTEX_M&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/drivers&quot;"/>
@@ -1037,32 +944,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/fat/ChaN&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs/littlefs&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/importer&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/nanostack&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/generic_modem_driver&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/utils&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/storage&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal/storage_abstraction&quot;"/>
@@ -1088,6 +969,10 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_GCC_ARM&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/TARGET_STM32F407_BLACK&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit_TFTLCD_16bit_STM32-master/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Chart&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.016049537" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__MBED__=1"/>
@@ -1123,7 +1008,7 @@
 									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
 									<listOptionValue builtIn="false" value="TARGET_STM"/>
 									<listOptionValue builtIn="false" value="TARGET_STM32F407"/>
-									<listOptionValue builtIn="false" value="TARGET_STM32F407VG"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F407VE"/>
 									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
 									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
 									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
@@ -1146,9 +1031,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/.&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/img&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/BUILD/export/MBED_A1_mcuxpresso_LPC11U37H_401&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/cmsis/TARGET_CORTEX_M&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/drivers&quot;"/>
@@ -1161,32 +1043,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/fat/ChaN&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/filesystem/littlefs/littlefs&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/greentea-client&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/greentea-client/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/unity/unity&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/source&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/frameworks/utest/utest&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/importer&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/inc/mbedtls&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/platform/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/nanostack&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/generic_modem_driver&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/netsocket/cellular/utils&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/features/storage&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/hal/storage_abstraction&quot;"/>
@@ -1212,6 +1068,11 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_GCC_ARM&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/TARGET_STM32F407_BLACK&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit-GFX-Library/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Adafruit_TFTLCD_16bit_STM32-master/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/Chart&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/lib/OneButton&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs.982931126" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__MBED__=1"/>
@@ -1247,7 +1108,7 @@
 									<listOptionValue builtIn="false" value="DEVICE_PORTIN=1"/>
 									<listOptionValue builtIn="false" value="TARGET_STM"/>
 									<listOptionValue builtIn="false" value="TARGET_STM32F407"/>
-									<listOptionValue builtIn="false" value="TARGET_STM32F407VG"/>
+									<listOptionValue builtIn="false" value="TARGET_STM32F407VE"/>
 									<listOptionValue builtIn="false" value="TARGET_LIKE_MBED"/>
 									<listOptionValue builtIn="false" value="__MBED_CMSIS_RTOS_CM"/>
 									<listOptionValue builtIn="false" value="DEVICE_SLEEP=1"/>
@@ -1317,7 +1178,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="mbed-os/features/storage|mbed-os/features/filesystem|mbed-os/tools|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_MICRO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_CORTEX_A|Release|mbed-os/features/FEATURE_COMMON_PAL|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xC|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_ARM|mbed-os/targets/TARGET_ARM_SSG|mbed-os/features/filesystem/littlefs/littlefs/tests|mbed-os/features/TESTS|mbed-os/targets/TARGET_STM/TARGET_STM32L1|mbed-os/targets/TARGET_STM/TARGET_STM32L0|mbed-os/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_RENESAS|mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_IAR|mbed-os/features/frameworks/utest/TESTS|BUILD|Debug|mbed-os/targets/TARGET_NUVOTON|mbed-os/targets/TARGET_TOSHIBA|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_NORDIC|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0P|mbed-os/targets/TARGET_Analog_Devices|mbed-os/features/filesystem/littlefs/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F429xI|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M3|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTB_MTS_DRAGONFLY|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F410xB|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_DRAGONFLY_F411RE|mbed-os/features/unsupported|mbed-os/targets/TARGET_Realtek|mbed-os/targets/TARGET_WIZNET|.settings|mbed-os/hal/TARGET_FLASH_CMSIS_ALGO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_IAR|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F411xE|.git|mbed-os/features/mbedtls/importer/TARGET_IGNORE|mbed-os/features/mbedtls/targets/TARGET_Silicon_Labs|mbed-os/features/filesystem/littlefs/littlefs/emubd|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xG|mbed-os/.github|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M33|mbed-os/targets/TARGET_NXP|mbed-os/features/FEATURE_UVISOR|mbed-os/features/FEATURE_BLE|mbed-os/TESTS|.objs|mbed-os/.git|mbed-os/features/nanostack/FEATURE_THREAD_ROUTER|mbed-os/features/nanostack/FEATURE_NANOSTACK|mbed-os/targets/TARGET_Freescale|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F7|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M23|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_IAR|mbed-os/targets/TARGET_Silicon_Labs|mbed-os/features/netsocket/cellular/generic_modem_driver/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/TARGET_CORTEX_A|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_STD|mbed-os/cmsis/TARGET_CORTEX_A|mbed-os/targets/TARGET_Maxim|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F405RG|mbed-os/events/equeue/tests|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F411RE|mbed-os/targets/TARGET_STM/TARGET_STM32F7|mbed-os/targets/TARGET_ONSEMI|mbed-os/targets/TARGET_STM/TARGET_STM32F3|mbed-os/targets/TARGET_STM/TARGET_STM32F2|mbed-os/targets/TARGET_STM/TARGET_STM32F1|mbed-os/targets/TARGET_STM/TARGET_STM32F0|mbed-os/features/FEATURE_LWIP|mbed-os/targets/TARGET_ublox|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F412xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F469xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH|mbed-os/targets/TARGET_Atmel|mbed-os/features/mbedtls/targets/TARGET_NUVOTON|mbed-os/features/storage/FEATURE_STORAGE|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="lib/Adafruit_TFTLCD_16bit_STM32-master/examples|lib/Adafruit-GFX-Library/fontconvert|mbed-os/features/storage|mbed-os/features/filesystem|mbed-os/tools|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_MICRO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_CORTEX_A|Release|mbed-os/features/FEATURE_COMMON_PAL|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xC|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F401xE|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_ARM|mbed-os/targets/TARGET_ARM_SSG|mbed-os/features/filesystem/littlefs/littlefs/tests|mbed-os/features/TESTS|mbed-os/targets/TARGET_STM/TARGET_STM32L1|mbed-os/targets/TARGET_STM/TARGET_STM32L0|mbed-os/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_RENESAS|mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_IAR|mbed-os/features/frameworks/utest/TESTS|BUILD|Debug|mbed-os/targets/TARGET_NUVOTON|mbed-os/targets/TARGET_TOSHIBA|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_NORDIC|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0P|mbed-os/targets/TARGET_Analog_Devices|mbed-os/features/filesystem/littlefs/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M0|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F429xI|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M3|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32L4|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTB_MTS_DRAGONFLY|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F410xB|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_DRAGONFLY_F411RE|mbed-os/features/unsupported|mbed-os/targets/TARGET_Realtek|mbed-os/targets/TARGET_WIZNET|.settings|mbed-os/hal/TARGET_FLASH_CMSIS_ALGO|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_IAR|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F411xE|.git|mbed-os/features/mbedtls/importer/TARGET_IGNORE|mbed-os/features/mbedtls/targets/TARGET_Silicon_Labs|mbed-os/features/filesystem/littlefs/littlefs/emubd|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xG|mbed-os/.github|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M33|mbed-os/targets/TARGET_NXP|mbed-os/features/FEATURE_UVISOR|mbed-os/features/FEATURE_BLE|mbed-os/TESTS|.objs|mbed-os/.git|mbed-os/features/nanostack/FEATURE_THREAD_ROUTER|mbed-os/features/nanostack/FEATURE_NANOSTACK|mbed-os/targets/TARGET_Freescale|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F437xG|mbed-os/features/mbedtls/targets/TARGET_STM/TARGET_STM32F7|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Source/TOOLCHAIN_GCC/TARGET_M23|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F439xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_IAR|mbed-os/targets/TARGET_Silicon_Labs|mbed-os/features/netsocket/cellular/generic_modem_driver/TESTS|mbed-os/rtos/TARGET_CORTEX/rtx5/RTX/Config/TARGET_CORTEX_A|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F407xE/device/TOOLCHAIN_ARM_STD|mbed-os/cmsis/TARGET_CORTEX_A|mbed-os/targets/TARGET_Maxim|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F405RG|mbed-os/events/equeue/tests|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_MTS_MDOT_F411RE|mbed-os/targets/TARGET_STM/TARGET_STM32F7|mbed-os/targets/TARGET_ONSEMI|mbed-os/targets/TARGET_STM/TARGET_STM32F3|mbed-os/targets/TARGET_STM/TARGET_STM32F2|mbed-os/targets/TARGET_STM/TARGET_STM32F1|mbed-os/targets/TARGET_STM/TARGET_STM32F0|mbed-os/features/FEATURE_LWIP|mbed-os/targets/TARGET_ublox|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F412xG|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F469xI|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F413xH|mbed-os/targets/TARGET_Atmel|mbed-os/features/mbedtls/targets/TARGET_NUVOTON|mbed-os/features/storage/FEATURE_STORAGE|mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGET_STM32F446xE" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
