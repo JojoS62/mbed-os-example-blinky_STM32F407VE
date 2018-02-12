@@ -44,8 +44,8 @@ void Chart::draw() {
 		plotAreas->draw();
 }
 
-PlotArea* Chart::addPlotArea(int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color) {
-	PlotArea* p = new PlotArea(this, offsetLeft, offsetRight, offsetTop, offsetBottom, color);
+PlotArea& Chart::addPlotArea(int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color) {
+	PlotArea* p = new PlotArea(*this, offsetLeft, offsetRight, offsetTop, offsetBottom, color);
 	plotAreas = p;
-	return p;
+	return *p;
 }

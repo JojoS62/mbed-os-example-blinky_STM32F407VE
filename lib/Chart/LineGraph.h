@@ -36,7 +36,7 @@ SOFTWARE.*
 
 class LineGraph : public GraphBase {
 public:
-	LineGraph(GfxItem *parent, DataBuffer *data, YScale *yScale, uint16_t color);
+	LineGraph(GfxItem &parent, DataBuffer *data, YScale& yScale, uint16_t color);
 
 	void draw();
 

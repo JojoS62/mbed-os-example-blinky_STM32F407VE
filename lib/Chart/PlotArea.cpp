@@ -31,12 +31,12 @@ SOFTWARE.*
 
 #include "PlotArea.h"
 
-PlotArea::PlotArea(GfxItem* parent, int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color) :
-	GfxItem(parent,
-			parent->x0() + offsetLeft,
-			parent->y0() + offsetTop,
-			parent->width() - offsetLeft - offsetRight,
-			parent->height() - offsetTop - offsetBottom,
+PlotArea::PlotArea(GfxItem& parent, int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color) :
+	GfxItem(&parent,
+			parent.x0() + offsetLeft,
+			parent.y0() + offsetTop,
+			parent.width() - offsetLeft - offsetRight,
+			parent.height() - offsetTop - offsetBottom,
 			color) {
 	_gridVertical = 0;
 	_gridHorizontal = 0;
@@ -55,18 +55,18 @@ void PlotArea::draw() {
 		_yScale->draw();
 }
 
-Grid* PlotArea::addGridVertical(int division, uint16_t color) {
+Grid& PlotArea::addGridVertical(int division, uint16_t color) {
 	_gridVertical = new Grid(this, vertical, division, color);
-	return _gridVertical;
+	return *_gridVertical;
 }
 
-Grid* PlotArea::addGridHorizontal(int division, uint16_t color) {
+Grid& PlotArea::addGridHorizontal(int division, uint16_t color) {
 	_gridHorizontal = new Grid(this, horizontal, division, color);
-	return _gridHorizontal;
+	return *_gridHorizontal;
 }
 
-YScale* PlotArea::addYScale(int offset, float minValue, float maxValue,
+YScale& PlotArea::addYScale(int offset, float minValue, float maxValue,
 		uint16_t color) {
 	_yScale = new YScale(this, offset, minValue, maxValue, color);
-	return _yScale;
+	return *_yScale;
 }

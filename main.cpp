@@ -43,12 +43,12 @@ threadIO_10ms ()
 int
 main ()
 {
+    Serial com1 (PA_9, PA_10);
     StopWatch    stopWatch;
 
     DigitalOut led1 (LED_D2);
     DigitalOut led2 (LED_D3);
 
-    Serial com1 (PA_9, PA_10);
     Adafruit_TFTLCD_16bit_STM32 tft (NC);
 
     com1.printf ("Hello from STM32F407VE\n");
@@ -68,28 +68,31 @@ main ()
     Chart chart (tft, 0, 0, 320, 200, WHITE);
 
     // create plot area
-    PlotArea* plotArea = chart.addPlotArea (6 * 6, 0, 0, 10,
+    PlotArea& plotArea = chart.addPlotArea (6 * 6, 0, 0, 10,
                                             tft.color565 (128, 128, 128));
 
     // add grids
-    plotArea->addGridVertical (plotArea->width () / 10,
+    plotArea.addGridVertical (plotArea.width () / 10,
                                tft.color565 (100, 100, 100));
-    plotArea->addGridHorizontal (plotArea->height () / 5,
+    plotArea.addGridHorizontal (plotArea.height () / 5,
                                  tft.color565 (100, 100, 100));
 
     // add y-scale
-    YScale *yScale = plotArea->addYScale (-1, 0.0f, 50.0f, BLUE);
+    YScale& yScale = plotArea.addYScale (-1, 0.0f, 50.0f, BLUE);
 
     // create DataRecorder
-    DataRecorder temperatureRecorder (plotArea->width (), DataRecorder::noWrap);
-    DataRecorder humidityRecorder (plotArea->width (), DataRecorder::noWrap);
+    DataRecorder temperatureRecorder (plotArea.width (), DataRecorder::noWrap);
+    DataRecorder humidityRecorder (plotArea.width (), DataRecorder::noWrap);
 
     // add line graphs
-    LineGraph *lineGraphTemperature = new LineGraph (
-            plotArea, temperatureRecorder.dataBuffer, yScale, YELLOW);
+    LineGraph *lineGraphTemperature = new LineGraph (plotArea,
+                                                     temperatureRecorder.dataBuffer,
+                                                     yScale,
+                                                     YELLOW);
     LineGraph *lineGraphHumidity = new LineGraph (plotArea,
                                                   humidityRecorder.dataBuffer,
-                                                  yScale, GREEN);
+                                                  yScale,
+                                                  GREEN);
 
     // draw everything
     chart.draw ();

@@ -45,7 +45,7 @@ public:
 	Chart(Adafruit_GFX &gfx, int x, int y, int w, int h, uint16_t color);
 
 	void draw();
-	PlotArea* addPlotArea(int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color);
+	PlotArea& addPlotArea(int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color);
 
 private:
 	//vector<PlotArea*> plotAreas;

@@ -31,7 +31,7 @@ SOFTWARE.*
 
 #include <LineGraph.h>
 
-LineGraph::LineGraph(GfxItem *parent, DataBuffer* data, YScale* yScale, uint16_t color) :
+LineGraph::LineGraph(GfxItem& parent, DataBuffer* data, YScale& yScale, uint16_t color) :
 	GraphBase(parent, data, yScale, color) {
 	_stopIndex = data->stopIndex;
 }

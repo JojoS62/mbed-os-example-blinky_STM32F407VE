@@ -39,7 +39,7 @@ SOFTWARE.*
 
 class GraphBase : public GfxItem {
 public:
-	GraphBase(GfxItem *parent, DataBuffer *data, YScale *yScale, uint16_t color);
+	GraphBase(GfxItem &parent, DataBuffer *data, YScale &yScale, uint16_t color);
 
 protected:
 	DataBuffer *_data;

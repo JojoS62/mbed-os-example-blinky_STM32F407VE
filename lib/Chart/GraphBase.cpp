@@ -31,8 +31,8 @@ SOFTWARE.*
 
 #include "GraphBase.h"
 
-GraphBase::GraphBase(GfxItem* parent, DataBuffer* data, YScale* yScale, uint16_t color) :
-	GfxItem(parent, parent->x0(), parent->y0(), parent->width(), parent->height(), color),
+GraphBase::GraphBase(GfxItem& parent, DataBuffer* data, YScale& yScale, uint16_t color) :
+	GfxItem(&parent, parent.x0(), parent.y0(), parent.width(), parent.height(), color),
 	_data(data),
-	_yScale(yScale) {
+	_yScale(&yScale) {
 }
