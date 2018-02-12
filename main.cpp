@@ -10,6 +10,16 @@
 
 Thread thread;
 
+//
+// color defines
+//
+
+#define COLOR_CHART_BACKGROUND      (WHITE)
+#define COLOR_PLOTAREA_1            (tft.color565 (128, 128, 128))
+#define COLOR_GRID_VERTICAL         (tft.color565 (100, 100, 100))
+#define COLOR_GRID_HORIZONTAL       (tft.color565 (100, 100, 100))
+#define COLOR_Y_SCALE               (BLUE)
+
 void
 threadIO_10ms ()
 {
@@ -65,20 +75,17 @@ main ()
     thread.start (threadIO_10ms);
 
     // basic chart object
-    Chart chart (tft, 0, 0, 320, 200, WHITE);
+    Chart chart (tft, 0, 0, 320, 200, COLOR_CHART_BACKGROUND);
 
     // create plot area
-    PlotArea& plotArea = chart.addPlotArea (6 * 6, 0, 0, 10,
-                                            tft.color565 (128, 128, 128));
+    PlotArea& plotArea = chart.addPlotArea (6 * 6, 0, 0, 10, COLOR_PLOTAREA_1 );
 
     // add grids
-    plotArea.addGridVertical (plotArea.width () / 10,
-                               tft.color565 (100, 100, 100));
-    plotArea.addGridHorizontal (plotArea.height () / 5,
-                                 tft.color565 (100, 100, 100));
+    plotArea.addGridVertical (plotArea.width () / 10, COLOR_GRID_VERTICAL );
+    plotArea.addGridHorizontal (plotArea.height () / 5, COLOR_GRID_VERTICAL );
 
     // add y-scale
-    YScale& yScale = plotArea.addYScale (-1, 0.0f, 50.0f, BLUE);
+    YScale& yScale = plotArea.addYScale (-1, 0.0f, 50.0f, COLOR_Y_SCALE);
 
     // create DataRecorder
     DataRecorder temperatureRecorder (plotArea.width (), DataRecorder::noWrap);
