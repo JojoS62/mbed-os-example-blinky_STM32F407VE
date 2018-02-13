@@ -135,7 +135,7 @@ main ()
 
 #if 1   // test 1
         temperature = sin ((x * 3.1415f) / 180.0f) * 10.0f + 25.0f;
-        humidity = cos ((x * 3.1415f) / 180.0f) * 10.0f + 25.0f;
+        humidity = cos ((1.5*x * 3.1415f) / 180.0f) * 20.0f + 30.0f;
         x += 2.0f;
 
         //tft.fillRect(0, 201, tft.width()-1, tft.height()-200, BLACK);
