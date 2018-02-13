@@ -56,7 +56,7 @@ threadIO_10ms ()
 int
 main ()
 {
-    Serial com1 (PA_9, PA_10);
+    Serial com1 (PA_9, PA_10, 115200);
     StopWatch    stopWatch;
 
     DigitalOut led1 (LED_D2);
@@ -139,7 +139,8 @@ main ()
         x += 2.0f;
 
         //tft.fillRect(0, 201, tft.width()-1, tft.height()-200, BLACK);
-        tft.setFont (&FreeMonoBold24pt7b);
+        //tft.setFont (&FreeMonoBold24pt7b);
+        tft.setFont (&FreeMono18pt7b);
         tft.setTextColor (YELLOW, BLACK);
         //tft.setCursor(0, 240-25); // tft.height()-25);
         tft.setCursor (0, 240 - 2);
