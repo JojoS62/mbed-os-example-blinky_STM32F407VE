@@ -39,18 +39,23 @@ LineGraph::LineGraph(GfxItem& parent, DataBuffer* data, YScale& yScale, uint16_t
 void LineGraph::draw() {
 	float dY = (float)_h / (_yScale->_maxValue - _yScale->_minValue);
 
+	// redraw if new data
 	if (_data->stopIndex < _stopIndex) {
 		_parent->draw();
 	};
-	_stopIndex = _data->stopIndex;
 
+	// exit if no data
 	if (_data->stopIndex < 0)
 		return;
 
-	int x =_x;
-	for (int i = 0; i<_data->stopIndex; i++) {
+	// draw from last index to new datalength
+	int x =_x + _stopIndex;
+	for (int i = _stopIndex; i <= _data->stopIndex; i++) {
 		int y = (_y + _h) - _data->data[i] * dY;
 		_gfx.drawPixel(x, y, _color);
 		x++;
 	}
+
+	_stopIndex = _data->stopIndex;
+
 }
