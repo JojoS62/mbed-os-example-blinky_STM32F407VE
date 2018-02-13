@@ -55,12 +55,12 @@ void PlotArea::draw() {
 		_yScale->draw();
 }
 
-Grid& PlotArea::addGridVertical(int division, uint16_t color) {
+Grid& PlotArea::addGridVertical(float division, uint16_t color) {
 	_gridVertical = new Grid(this, vertical, division, color);
 	return *_gridVertical;
 }
 
-Grid& PlotArea::addGridHorizontal(int division, uint16_t color) {
+Grid& PlotArea::addGridHorizontal(float division, uint16_t color) {
 	_gridHorizontal = new Grid(this, horizontal, division, color);
 	return *_gridHorizontal;
 }

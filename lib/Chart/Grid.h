@@ -38,13 +38,13 @@ enum GridOrientation {vertical, horizontal};
 
 class Grid : public GfxItem {
 public:
-	Grid(GfxItem* parent, GridOrientation orientation, int division, uint16_t color);
+	Grid(GfxItem* parent, GridOrientation orientation, float division, uint16_t color);
 
 	void draw();
 
 private:
 	GridOrientation _orientation;
-	int _division;
+	float _division;
 };
 
 
