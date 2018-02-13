@@ -33,6 +33,7 @@ SOFTWARE.*
 #ifndef SRC_CHART_H_
 #define SRC_CHART_H_
 
+#include <vector>
 #include "GfxItem.h"
 #include "PlotArea.h"
 #include "Grid.h"
@@ -48,8 +49,8 @@ public:
 	PlotArea& addPlotArea(int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color);
 
 private:
-	//vector<PlotArea*> plotAreas;
-	PlotArea* plotAreas;
+	std::vector<PlotArea*> plotAreas;
+	//PlotArea* plotAreas;
 };
 
 
