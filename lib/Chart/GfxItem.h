@@ -69,7 +69,7 @@ protected:
 	int _y;
 	int _w;
 	int _h;
-	int _color;
+	uint16_t _color;
 };
 
 
