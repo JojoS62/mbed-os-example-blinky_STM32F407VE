@@ -1,3 +1,5 @@
+#include <vector>
+
 #include "mbed.h"
 #include "Adafruit_TFTLCD_16bit_STM32.h"
 #include "FreeMonoBoldOblique24pt7b.h"
@@ -16,6 +18,7 @@ Thread thread;
 
 #define COLOR_CHART_BACKGROUND      (WHITE)
 #define COLOR_PLOTAREA_1            (tft.color565 (128, 128, 128))
+#define COLOR_PLOTAREA_2            (tft.color565 (  0, 128, 128))
 #define COLOR_GRID_VERTICAL         (tft.color565 (100, 100, 100))
 #define COLOR_GRID_HORIZONTAL       (tft.color565 (100, 100, 100))
 #define COLOR_Y_SCALE               (BLUE)
@@ -78,11 +81,15 @@ main ()
     Chart chart (tft, 0, 0, 320, 200, COLOR_CHART_BACKGROUND);
 
     // create plot area
-    PlotArea& plotArea = chart.addPlotArea (6 * 6, 0, 0, 10, COLOR_PLOTAREA_1 );
+    PlotArea& plotArea  = chart.addPlotArea (6 * 6, 0,                0, chart.height()/2 + 10, COLOR_PLOTAREA_1 );
+    PlotArea& plotArea2 = chart.addPlotArea (6 * 6, 0, chart.height()/2,                    10, COLOR_PLOTAREA_2 );
 
     // add grids
     plotArea.addGridVertical (plotArea.width () / 10, COLOR_GRID_VERTICAL );
     plotArea.addGridHorizontal (plotArea.height () / 5, COLOR_GRID_VERTICAL );
+
+    plotArea2.addGridVertical (plotArea.width () / 5, WHITE );
+    plotArea2.addGridHorizontal (plotArea.height () / 3, WHITE );
 
     // add y-scale
     YScale& yScale = plotArea.addYScale (-1, 0.0f, 50.0f, COLOR_Y_SCALE);
@@ -96,7 +103,7 @@ main ()
                                                      temperatureRecorder.dataBuffer,
                                                      yScale,
                                                      YELLOW);
-    LineGraph *lineGraphHumidity = new LineGraph (plotArea,
+    LineGraph *lineGraphHumidity = new LineGraph (plotArea2,
                                                   humidityRecorder.dataBuffer,
                                                   yScale,
                                                   GREEN);
