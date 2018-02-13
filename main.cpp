@@ -85,11 +85,11 @@ main ()
     PlotArea& plotArea2 = chart.addPlotArea (6 * 6, 0, chart.height()/2,                    10, COLOR_PLOTAREA_2 );
 
     // add grids
-    plotArea.addGridVertical (plotArea.width () / 10, COLOR_GRID_VERTICAL );
-    plotArea.addGridHorizontal (plotArea.height () / 5, COLOR_GRID_VERTICAL );
+    plotArea.addGridVertical (plotArea.width () / 10.0f, COLOR_GRID_VERTICAL );
+    plotArea.addGridHorizontal (plotArea.height () / 5.0f, COLOR_GRID_VERTICAL );
 
-    plotArea2.addGridVertical (plotArea.width () / 5, WHITE );
-    plotArea2.addGridHorizontal (plotArea.height () / 3, WHITE );
+    plotArea2.addGridVertical (plotArea.width () / 5.0f, WHITE );
+    plotArea2.addGridHorizontal (plotArea.height () / 3.0f, WHITE );
 
     // add y-scale
     YScale& yScale = plotArea.addYScale (-1, 0.0f, 50.0f, COLOR_Y_SCALE);
