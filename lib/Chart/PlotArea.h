@@ -38,7 +38,7 @@ SOFTWARE.*
 
 class PlotArea : public GfxItem {
 public:
-	PlotArea(GfxItem& parent, int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color);
+	PlotArea(GfxItem &parent, int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color);
 
 	Grid& addGridVertical(float division, uint16_t color);
 	Grid& addGridHorizontal(float division, uint16_t color);

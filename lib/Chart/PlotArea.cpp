@@ -40,6 +40,7 @@ PlotArea::PlotArea(GfxItem& parent, int offsetLeft, int offsetRight, int offsetT
 			color) {
 	_gridVertical = 0;
 	_gridHorizontal = 0;
+	_yScale = 0;
 }
 
 void PlotArea::draw() {
