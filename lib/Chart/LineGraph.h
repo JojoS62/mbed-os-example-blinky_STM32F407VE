@@ -42,6 +42,7 @@ public:
 
 private:
 	int _stopIndex;
+	float _dY;
 };
 
 

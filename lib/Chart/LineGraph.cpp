@@ -30,15 +30,15 @@ SOFTWARE.*
  */
 
 #include <LineGraph.h>
+//#include <math.h>
 
 LineGraph::LineGraph(GfxItem& parent, DataBuffer* data, YScale& yScale, uint16_t color) :
 	GraphBase(parent, data, yScale, color) {
 	_stopIndex = data->stopIndex;
+	_dY = (float)_h / (yScale.maxValue() - yScale.minValue());
 }
 
 void LineGraph::draw() {
-	float dY = (float)_h / (_yScale->_maxValue - _yScale->_minValue);
-
 	// redraw if new data
 	if (_data->stopIndex < _stopIndex) {
 		_parent->draw();
@@ -51,7 +51,12 @@ void LineGraph::draw() {
 	// draw from last index to new datalength
 	int x =_x + _stopIndex;
 	for (int i = _stopIndex; i <= _data->stopIndex; i++) {
-		int y = (_y + _h) - _data->data[i] * dY;
+	    // get value and check clipping
+	    float value = _data->data[i];
+        value = fmax(value, _yScale->minValue());
+        value = fmin(value, _yScale->maxValue());
+
+		int y = (_y + _h) - value * _dY;
 		_gfx.drawPixel(x, y, _color);
 		x++;
 	}
