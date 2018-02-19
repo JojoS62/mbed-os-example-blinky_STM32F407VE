@@ -38,9 +38,14 @@ class YScale  : public GfxItem {
 public:
 	YScale(GfxItem* parent, int offsetLeft, float minValue, float maxValue, uint16_t color);
 
+    float minValue() { return _minValue; };
+    float maxValue() { return _maxValue; };
+    void setMinValue(float value);
+    void setMaxValue(float value);
+
 	virtual void draw();
 
-//private:
+private:
 	float	_minValue;
 	float	_maxValue;
 };

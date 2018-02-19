@@ -64,3 +64,11 @@ void YScale::draw() {
 	_gfx.setCursor(x1, y1+_h-h);
 	_gfx.printf("%4.0f", _minValue);
 }
+
+void YScale::setMinValue(float value) {
+    _minValue = value;
+}
+
+void YScale::setMaxValue(float value) {
+    _maxValue = value;
+}
