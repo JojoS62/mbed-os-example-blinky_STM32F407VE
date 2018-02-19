@@ -9,11 +9,17 @@
 #include "Stopwatch.h"
 #include "dht.h"
 
-Thread thread;
-
 //
 // color defines
 //
+
+#define bSimu 0
+
+#if (bSimu == 1)
+#define CYCLE_DELAY  (10)
+#else
+#define CYCLE_DELAY  (1000)
+#endif
 
 #define COLOR_CHART_BACKGROUND      (WHITE)
 #define COLOR_PLOTAREA_1            (tft.color565 (128, 128, 128))
@@ -21,6 +27,8 @@ Thread thread;
 #define COLOR_GRID_VERTICAL         (tft.color565 (100, 100, 100))
 #define COLOR_GRID_HORIZONTAL       (tft.color565 (100, 100, 100))
 #define COLOR_Y_SCALE               (BLUE)
+
+Thread thread;
 
 void threadIO_10ms() {
     DigitalIn inButtonK1(PE_3, PullUp);
@@ -93,8 +101,8 @@ int main() {
     YScale& yScale2 = plotArea2.addYScale(-1, 0.0f, 100.0f, COLOR_Y_SCALE);
 
     // create DataRecorder
-    DataRecorder temperatureRecorder(plotArea.width(), DataRecorder::noWrap);
-    DataRecorder humidityRecorder(plotArea.width(), DataRecorder::noWrap);
+    DataRecorder temperatureRecorder(plotArea.width(), DataRecorder::compress);
+    DataRecorder humidityRecorder(plotArea.width(), DataRecorder::compress);
 
     // add line graphs
     LineGraph *lineGraphTemperature = new LineGraph(plotArea, temperatureRecorder.dataBuffer, yScale, YELLOW);
@@ -118,17 +126,17 @@ int main() {
         led1 = 0;
         led2 = 1;
 
-        wait_ms(1000);
+        wait_ms(CYCLE_DELAY);
 
         led1 = 1;
         led2 = 0;
 
-        wait_ms(1000);
+        wait_ms(CYCLE_DELAY);
 
 //        tft.fillScreen(tft.color565 (128, 128, 128) );
 
 #if 1   // test 1
-#ifdef bSimu
+#if (bSimu == 1)
         temperature = sin((x * 3.1415f) / 180.0f) * 10.0f + 25.0f;
         humidity = cos((1.5 * x * 3.1415f) / 180.0f) * 20.0f + 30.0f;
         x += 2.0f;
