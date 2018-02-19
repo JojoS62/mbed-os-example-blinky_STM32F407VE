@@ -40,8 +40,20 @@ DataRecorder::DataRecorder(uint32_t numPoints, RecordMode recordMode) :
 
 
 void DataRecorder::addYValue(float value) {
-	if (dataBuffer->isFull())
-		dataBuffer->reset();
+	if (dataBuffer->isFull()) {
+	    switch(_recordMode) {
+	        case noWrap:
+	            dataBuffer->reset();
+	            break;
+
+	        case compress:
+	            dataBuffer->compress();
+	            break;
+
+	        default:
+	            dataBuffer->reset();
+	    }
+	}
 	dataBuffer->addPoint(value);
 }
 
