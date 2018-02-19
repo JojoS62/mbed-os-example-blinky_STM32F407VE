@@ -1,5 +1,3 @@
-#include <vector>
-
 #include "mbed.h"
 #include "Adafruit_TFTLCD_16bit_STM32.h"
 #include "FreeMonoBoldOblique24pt7b.h"
@@ -9,6 +7,7 @@
 #include "Chart.h"
 #include "DataRecorder.h"
 #include "Stopwatch.h"
+#include "dht.h"
 
 Thread thread;
 
@@ -60,6 +59,8 @@ int main() {
 
     Adafruit_TFTLCD_16bit_STM32 tft(NC);
 
+    DHT dhtSensor(PE_0, DHT22);
+
     com1.printf("Hello from STM32F407VE\n");
 
     int i = 0;
@@ -77,10 +78,8 @@ int main() {
     Chart chart(tft, 0, 0, 320, 200, COLOR_CHART_BACKGROUND);
 
     // create plot area
-    PlotArea& plotArea = chart.addPlotArea(6 * 6, 0, 0, chart.height() / 2 + 10,
-    COLOR_PLOTAREA_1);
-    PlotArea& plotArea2 = chart.addPlotArea(6 * 6, 0, chart.height() / 2, 10,
-    COLOR_PLOTAREA_2);
+    PlotArea& plotArea = chart.addPlotArea(6 * 6, 0, 0, chart.height() / 2 + 10, COLOR_PLOTAREA_1);
+    PlotArea& plotArea2 = chart.addPlotArea(6 * 6, 0, chart.height() / 2, 10, COLOR_PLOTAREA_2);
 
     // add grids
     plotArea.addGridVertical(plotArea.width() / 10.0f, COLOR_GRID_VERTICAL);
@@ -90,7 +89,8 @@ int main() {
     plotArea2.addGridHorizontal(plotArea.height() / 3.0f, WHITE);
 
     // add y-scale
-    YScale& yScale = plotArea.addYScale(-1, 0.0f, 50.0f, COLOR_Y_SCALE);
+    YScale& yScale  = plotArea.addYScale(-1, 0.0f, 50.0f, COLOR_Y_SCALE);
+    YScale& yScale2 = plotArea2.addYScale(-1, 0.0f, 100.0f, COLOR_Y_SCALE);
 
     // create DataRecorder
     DataRecorder temperatureRecorder(plotArea.width(), DataRecorder::noWrap);
@@ -98,7 +98,7 @@ int main() {
 
     // add line graphs
     LineGraph *lineGraphTemperature = new LineGraph(plotArea, temperatureRecorder.dataBuffer, yScale, YELLOW);
-    LineGraph *lineGraphHumidity = new LineGraph(plotArea2, humidityRecorder.dataBuffer, yScale, RED);
+    LineGraph *lineGraphHumidity = new LineGraph(plotArea2, humidityRecorder.dataBuffer, yScale2, RED);
 
     // draw everything
     chart.draw();
@@ -107,7 +107,9 @@ int main() {
 
     float temperature = 0.0f;
     float humidity = 0.0f;
+#ifdef bSimu
     float x = 0.0f;
+#endif
 
     while (true) {
         stopWatch.start();
@@ -116,32 +118,46 @@ int main() {
         led1 = 0;
         led2 = 1;
 
-        wait_ms(50);
+        wait_ms(1000);
 
         led1 = 1;
         led2 = 0;
 
-        wait_ms(50);
+        wait_ms(1000);
 
 //        tft.fillScreen(tft.color565 (128, 128, 128) );
 
 #if 1   // test 1
+#ifdef bSimu
         temperature = sin((x * 3.1415f) / 180.0f) * 10.0f + 25.0f;
         humidity = cos((1.5 * x * 3.1415f) / 180.0f) * 20.0f + 30.0f;
         x += 2.0f;
+#else
+        int err = dhtSensor.readData();
+        if (err == eError::ERROR_NONE) {
+            temperature = dhtSensor.ReadTemperature(CELCIUS);
+            humidity = dhtSensor.ReadHumidity();
+        } else {
+            com1.printf("*** err reading dhtSensor: %i\n", err);
+            temperature = err;
+            humidity = -1.0f;
+        }
+#endif
 
         //tft.fillRect(0, 201, tft.width()-1, tft.height()-200, BLACK);
         tft.setFont(&FreeMonoBold24pt7b);
-        //tft.setFont (&FreeMono18pt7b);
         tft.setTextColor(YELLOW, BLACK);
-        //tft.setCursor(0, 240-25); // tft.height()-25);
-        tft.setCursor(0, 240 - 2);
 
         //testPin = 1;
         stopWatch.stopLapTime();
-        tft.fillRect(0, 201, 320, 240 - 200, BLACK);
+        tft.setCursor(0, 240 - 2);
+        tft.fillRect(0, 201, 320/2, 240 - 200, BLACK);
+        tft.printf("%3.1fC", temperature);
         stopWatch.stopLapTime();
-        tft.printf("%3.1fC %3.1f%%", temperature, humidity);
+
+        tft.setCursor(320/2, 240 - 2);
+        tft.fillRect(320/2, 201, 320/2, 240 - 200, BLACK);
+        tft.printf("%3.1f%%", humidity);
         stopWatch.stopLapTime();
         //testPin = 0;
 
