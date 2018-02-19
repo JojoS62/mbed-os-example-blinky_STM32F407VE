@@ -39,14 +39,23 @@ public:
 	DataBuffer(int maxPoints, float fillValue=0.0f);
 	void reset();
 	void addPoint(float value);
-	bool isFull() {return stopIndex==indexMax;};
+	bool isFull() {return _stopIndex==_indexMax;};
+	void compress();
+    int indexMax(){return _indexMax;};
+    int stopIndex(){return _stopIndex;};
+    int lpp(){return _lpp;};
 
-	float* data;
-	int indexMax;
-	int startIndex;
-	int stopIndex;
+	float* _data;
+
+private:
+	int _indexMax;
+	int _startIndex;
+	int _stopIndex;
 	float X0;
 	float deltaX;
+	int _lpp;
+	int _sumIndex;
+	double _sum;
 };
 
 

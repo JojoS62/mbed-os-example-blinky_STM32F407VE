@@ -32,19 +32,43 @@ SOFTWARE.*
 #include "DataBuffer.h"
 
 DataBuffer::DataBuffer(int maxPoints, float fillValue) {
-	data = new float[maxPoints];
-	indexMax = maxPoints - 1;
+	_data = new float[maxPoints];
+	_indexMax = maxPoints - 1;
 	reset();
 }
 
 void DataBuffer::addPoint(float value) {
-	if (stopIndex < indexMax) {
-		stopIndex++;
-		data[stopIndex] = value;
+    // integrate until lpp reached
+    _sumIndex++;
+    _sum += value;
+    if (_sumIndex < _lpp) {
+        return;
+    }
+    else {
+        value = _sum / _sumIndex;
+        _sum = 0.0;
+        _sumIndex = 0;
+    }
+
+    // add to data buffer
+	if (_stopIndex < _indexMax) {
+		_stopIndex++;
+		_data[_stopIndex] = value;
 	}
 }
 
 void DataBuffer::reset() {
-	startIndex = 0;
-	stopIndex = -1;
+	_startIndex = 0;
+	_stopIndex = -1;
+	_lpp = 1;
+	_sumIndex = 0;
+	_sum = 0.0;
+}
+
+void DataBuffer::compress() {
+    for (int i=0; i<_stopIndex; i++) {
+        _data[i] = (_data[2*i] + _data[2*i+1]) / 2.0f;
+    }
+    _stopIndex /= 2;
+    _lpp *= 2;
 }
