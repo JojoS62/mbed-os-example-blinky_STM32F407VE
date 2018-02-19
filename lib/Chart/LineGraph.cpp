@@ -34,33 +34,47 @@ SOFTWARE.*
 
 LineGraph::LineGraph(GfxItem& parent, DataBuffer* data, YScale& yScale, uint16_t color) :
 	GraphBase(parent, data, yScale, color) {
-	_stopIndex = data->stopIndex;
+	_stopIndex = data->stopIndex();
 	_dY = (float)_h / (yScale.maxValue() - yScale.minValue());
 }
 
 void LineGraph::draw() {
-	// redraw if new data
-	if (_data->stopIndex < _stopIndex) {
+    // default: draw deltas
+    int startIndex = _stopIndex;
+
+	// clear background if new data
+	if (_data->stopIndex() < _stopIndex) {
 		_parent->draw();
+
+		startIndex = 0;     //
 	};
 
 	// exit if no data
-	if (_data->stopIndex < 0)
+	if (_data->stopIndex() < 0)
 		return;
 
+	int xLast, yLast;
 	// draw from last index to new datalength
-	int x =_x + _stopIndex;
-	for (int i = _stopIndex; i <= _data->stopIndex; i++) {
+	int x =_x + startIndex;
+	for (int i = startIndex; i <= _data->stopIndex(); i++) {
 	    // get value and check clipping
-	    float value = _data->data[i];
+	    float value = _data->_data[i];
         value = fmax(value, _yScale->minValue());
         value = fmin(value, _yScale->maxValue());
 
 		int y = (_y + _h) - value * _dY;
-		_gfx.drawPixel(x, y, _color);
+		if (i == startIndex) {
+	        _gfx.drawPixel(x, y, _color);
+	        xLast = x;
+	        yLast = y;
+		}
+		else {
+            _gfx.drawLine(xLast, yLast, x, y, _color);
+            xLast = x;
+            yLast = y;
+		}
 		x++;
 	}
 
-	_stopIndex = _data->stopIndex;
-
+	_stopIndex = _data->stopIndex();
 }
