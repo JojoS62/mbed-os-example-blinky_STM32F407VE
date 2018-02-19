@@ -35,7 +35,6 @@ SOFTWARE.*
 
 Chart::Chart(Adafruit_GFX& gfx, int x, int y, int w, int h, uint16_t color) :
 	GfxItem(gfx, x, y, w, h, color)
-   //,plotAreas(8, (PlotArea*)0)
 {
 }
 

@@ -33,7 +33,7 @@ SOFTWARE.*
 #ifndef SRC_CHART_H_
 #define SRC_CHART_H_
 
-#include <vector>
+#include <list>
 #include "GfxItem.h"
 #include "PlotArea.h"
 #include "Grid.h"
@@ -41,7 +41,7 @@ SOFTWARE.*
 #include "LineGraph.h"
 #include "DataBuffer.h"
 
-class Chart : public GfxItem {
+class Chart : public GfxItem { // @suppress("Class has a virtual method and non-virtual destructor")
 public:
 	Chart(Adafruit_GFX &gfx, int x, int y, int w, int h, uint16_t color);
 
@@ -49,8 +49,7 @@ public:
 	PlotArea& addPlotArea(int offsetLeft, int offsetRight, int offsetTop, int offsetBottom, uint16_t color);
 
 private:
-	std::vector<PlotArea*> plotAreas;
-	//PlotArea* plotAreas;
+    std::list<PlotArea*> plotAreas;
 };
 
 
