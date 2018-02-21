@@ -62,7 +62,7 @@ void LineGraph::draw() {
         value = fmax(value, _yScale->minValue());
         value = fmin(value, _yScale->maxValue());
 
-		int y = (_y + _h) - value * _dY;
+		int y = (_y + _h) - (value - _yScale->minValue()) * _dY ;
 		if (i == startIndex) {
 	        _gfx.drawPixel(x, y, _color);
 	        xLast = x;
