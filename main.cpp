@@ -87,18 +87,18 @@ int main() {
 
     // create plot area
     PlotArea& plotArea = chart.addPlotArea(6 * 6, 0, 0, chart.height() / 2 + 10, COLOR_PLOTAREA_1);
-    PlotArea& plotArea2 = chart.addPlotArea(6 * 6, 0, chart.height() / 2, 10, COLOR_PLOTAREA_2);
+    PlotArea& plotArea2 = chart.addPlotArea(6 * 6, 0, chart.height() / 2, 10, COLOR_PLOTAREA_1);
 
     // add grids
     plotArea.addGridVertical(plotArea.width() / 10.0f, COLOR_GRID_VERTICAL);
     plotArea.addGridHorizontal(plotArea.height() / 5.0f, COLOR_GRID_VERTICAL);
 
-    plotArea2.addGridVertical(plotArea.width() / 5.0f, WHITE);
-    plotArea2.addGridHorizontal(plotArea.height() / 3.0f, WHITE);
+    plotArea2.addGridVertical(plotArea.width() / 5.0f, COLOR_GRID_VERTICAL);
+    plotArea2.addGridHorizontal(plotArea.height() / 4.0f, COLOR_GRID_VERTICAL);
 
     // add y-scale
-    YScale& yScale  = plotArea.addYScale(-1, 0.0f, 50.0f, COLOR_Y_SCALE);
-    YScale& yScale2 = plotArea2.addYScale(-1, 0.0f, 100.0f, COLOR_Y_SCALE);
+    YScale& yScale  = plotArea.addYScale(-1, 15.0f, 25.0f, COLOR_Y_SCALE);
+    YScale& yScale2 = plotArea2.addYScale(-1, 20.0f, 50.0f, COLOR_Y_SCALE);
 
     // create DataRecorder
     DataRecorder temperatureRecorder(plotArea.width(), DataRecorder::compress);
